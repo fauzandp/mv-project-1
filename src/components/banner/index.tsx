@@ -28,10 +28,7 @@ export default function Banner({ select }: propsBanner) {
               href=""
               className="primary"
               onClick={() => {
-                setLocalStorage(
-                  `${process.env.NEXT_PUBLIC_LOCAL_STORAGE}`,
-                  select
-                );
+                setLocalStorage(`${process.env.LOCAL_STORAGE}`, select);
                 isCheck(true);
               }}
             >

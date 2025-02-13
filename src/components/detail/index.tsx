@@ -74,10 +74,7 @@ const detail = ({ id, isTvDetail }: IProps) => {
               href={""}
               className="secondary"
               onClick={() => {
-                setLocalStorage(
-                  `${process.env.NEXT_PUBLIC_LOCAL_STORAGE}`,
-                  detail
-                );
+                setLocalStorage(`${process.env.LOCAL_STORAGE}`, detail);
               }}
             >
               Watch Later{" "}
@@ -86,10 +83,7 @@ const detail = ({ id, isTvDetail }: IProps) => {
               href=""
               className="primary"
               onClick={() => {
-                setLocalStorage(
-                  `${process.env.NEXT_PUBLIC_LOCAL_STORAGE}`,
-                  detail
-                );
+                setLocalStorage(`${process.env.LOCAL_STORAGE}`, detail);
                 isCheck(true);
               }}
             >

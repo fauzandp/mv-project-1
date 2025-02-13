@@ -9,11 +9,11 @@ export async function fecthFromApi(
   requestHeaders?: IHeaders,
   params?: any
 ) {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}` + url, {
+  const response = await fetch(`${process.env.API_URL}` + url, {
     method: method,
     headers: {
       "content-type": "application/json",
-      Authorization: `Bearer ${process.env.NEXT_PUBLIC_BEARER_AUTHORIZATION_TOKEN}`,
+      Authorization: `Bearer ${process.env.BEARER_AUTHORIZATION_TOKEN}`,
     },
   });
 
