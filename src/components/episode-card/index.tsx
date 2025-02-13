@@ -23,7 +23,7 @@ const EpisodeCard = ({ data }: IProps) => {
               <li>{formatDate(episode.air_date)} | </li>
               <li> {episode.runtime}m</li>
             </ul>
-            <p> {episode.overview} </p>
+            <p> {episode.overview.substring(0, 120)} </p>
           </div>
         </>
       ))}

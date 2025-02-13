@@ -38,12 +38,16 @@ const SearchContainer = () => {
             onSearchList(e);
           })}
         />
-        <Card
-          title={"Search"}
-          data={search || initialSearch}
-          isGeneral={true}
-          isWatchList={false}
-        />
+        {search?.total_pages && search?.total_pages > 0 && (
+          <>
+            <Card
+              title={"Search"}
+              data={search || initialSearch}
+              isGeneral={true}
+              isWatchList={false}
+            />
+          </>
+        )}
       </div>
     </>
   );

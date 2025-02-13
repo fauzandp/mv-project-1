@@ -9,7 +9,6 @@ export async function fecthFromApi(
   requestHeaders?: IHeaders,
   params?: any
 ) {
-  console.log(process.env.API_URL);
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}` + url, {
     method: method,
     headers: {

@@ -1,5 +1,4 @@
 import { movieRepository } from "@/api/movies/api.function";
-import { detailData } from "@/dummy";
 import { getYear, checkKey, setLocalStorage } from "@/utils";
 import { useEffect, useState } from "react";
 import EpisodeCard from "@/components/episode-card/index";
@@ -38,6 +37,10 @@ const detail = ({ id, isTvDetail }: IProps) => {
       getTvEpisode(id, season);
     }
   }, [season]);
+
+  useEffect(() => {
+    setSeason("season/1");
+  }, [detail]);
 
   const onClickSeason = (value: string) => {
     setSeason(value);

@@ -10,19 +10,21 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Folder Structure
 
-src
-
-- components
-  Folder component have contains a small parts for the project when the build a pages or website.
-- api
-  API have contains a core access or integrate with other external api. when the website want get the data from external api
+```bash
+- components <br>
+  Folder component have contains a small parts for the project when the build a pages or website. <br>
+- api<br>
+  API have contains a core access or integrate with other external api. when the website want get the data from external api \n
+```
 
 ## Requirements
 
 NODE Version : v22.13.1
+<br>
 NPM Version : 10.9.1
+<br>
 Tech Stack : Next JS & React using typescript
-
+<br>
 Libarry :
 
 - dotenv
