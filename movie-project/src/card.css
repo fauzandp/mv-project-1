@@ -1,0 +1,107 @@
+.section-card { 
+   width:  100%;
+     margin: 30px;
+   margin-bottom:  50px;
+    margin-left:  50px;
+  }
+
+
+.movie-card {
+    height: 240px;
+    width: 403px;
+    display: inline-block;
+    padding:5px;
+    transition: 0.3s all ease-in;
+    margin: 12px;
+  }
+  .movie-card:hover {
+    border: 3px solid white;
+  }
+
+  .movie-card img {
+    width: 393px;
+    height: 210px;
+
+  }
+
+  .watchlist-card {
+    height: 400px;
+    width: 260px;
+    display: inline-block;
+  position: relative;
+    transition: 0.3s all ease-in;
+    margin: 12px;
+  }
+
+
+  
+  
+  .watchlist-card a img{ 
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .watchlist-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+
+  .watchlist-card:hover {
+    border: 3px solid white;
+  }
+  
+  .watchlist-card img {
+    width: 260px;
+    height: 400px;
+  
+  }
+
+  .episode-card {
+    padding: 0px 10px;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .episode-card img { 
+    float:left;
+    height: 180px;
+    padding:0px 20px 20px  20px;
+  }
+
+  .episode-card   h1{ 
+    width:280px; 
+    float: left;
+    width:80px; 
+  }
+
+  .episode-card   p{ 
+    float: left;
+    word-break: break-all;
+    margin-top: 20px;
+
+  }
+  
+  .episode-card ul li  {
+    display: inline;
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: bold;
+  }
