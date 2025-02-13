@@ -43,7 +43,7 @@ export default function Banner({ select }: propsBanner) {
                 ? `https://image.tmdb.org/t/p/w500/` + select?.backdrop_path
                 : "/dummy1000x480.png"
             }
-            width="1000px"
+            width="800px"
             height="480px"
           />
         </div>
